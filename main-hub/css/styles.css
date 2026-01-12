@@ -22,8 +22,100 @@ body {
     background: #f4edde;
     margin: 0;
     font-family: "Geo", sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 1.4;
+}
+
+/* Basic styles for the navbar
+----------*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #222;
+    /* Green background */
+    color: papayawhip;
+}
+
+/* Logo styling
+----------*/
+.logo a {
+    font-family: "Silkscreen", sans-serif;
+    color: red;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/* Navigation links styling
+----------*/
+.nav-links {
+    font-family: "Silkscreen", sans-serif;
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: red;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s, text-decoration 0.3s, background-color 0.3s;
+    padding: 5px 10px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: aquamarine;
+    /* Lighter color for active/hover */
+    background-color: black;
+    /* Darker green background on hover */
+    border-radius: 4px;
+    /* Optional: rounded corners */
+}
+
+/* Menu toggle button for mobile view */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    background-color: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 5px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #28a745;
+        /* Green background for mobile view */
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
 }
 
 h1, h2, h3 {
@@ -36,10 +128,10 @@ h1 {
     line-height: 0.85;
 }
 h2 {
-    font-size: 3.6rem;
+    font-size: 5rem;
 }
 h3 {
-    font-size: 2.4rem;
+    font-size: 3rem;
 }
 
 /* links */
