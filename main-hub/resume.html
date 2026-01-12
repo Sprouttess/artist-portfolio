@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bryan Ko | Digital Artist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body class="resume">
@@ -37,15 +40,17 @@
         <p>Optional paragraph for the Projects summary. Delete if not being used.</p>
 
         <!-- To add more items, copy this whole <section></section> block-->
-        <section class="project-item">
-          <img src="images/coming-soon.jpg" srcset="" alt="Coming Soon" width="" height="">
-          <h3>Untitled, 202x</h3>
-          <p>Summary or description of the project and/or your role in it. Add as many paragraphs as you need.</p>
-          <!-- link to project -->
-          <a class="btn" href="#" target="_blank">Link</a>
-          <!-- additional links, e.g. newsletter -->
-          <a class="btn" href="#" target="_blank">Another link</a>
-        </section>
+         <div class="project-wrapper">
+          <section class="project-item">
+            <img src="images/coming-soon.jpg" srcset="" alt="Coming Soon" width="" height="">
+            <h3>Untitled, 202x</h3>
+            <p>Summary or description of the project and/or your role in it. Add as many paragraphs as you need.</p>
+            <!-- link to project -->
+            <a class="btn" href="#" target="_blank">Link</a>
+            <!-- additional links, e.g. newsletter -->
+            <a class="btn" href="#" target="_blank">Another link</a>
+          </section>
+         </div>
         
         <!-- End content edits here. -->
       </section>
@@ -56,31 +61,42 @@
         <h2>Work Experience</h2>
 
         <!-- To add more items, copy this whole <section></section> block -->
-        <section>
-          <h3>General Comittee/Video Editor</h3>
-          <p>CADRE SO (School Club)</p>
-          <p>June 2025 - Present</p>
-          <p>Club committee officer for a student organization at SJSU. CADRE SO is a student organization for art majors, mostly for Digital Media Art students, at San Jose State University. CADRE SO stands for Computer in Arts, Design, Research, and Education, Student Organization</p>
-          <p>Skills:</p>
-          <ul>
-            <li>Help organize, setup, and host club meetings and events</li>
-            <li>Assiting with new digial media art students or people who want to join DMA</li>
-            <li>Recording events</li>
-            <li>Taking all capture content and creating recap videos</li>
-          </ul>
+        <section class="work-item">
+          <div class="work-details">
+            <h3>General Comittee/Video Editor</h3>
+            <p>CADRE SO (School Club)</p>
+            <p>June 2025 - Present</p>
+          </div>
+
+          <div class="work-summary">
+            <p>Club committee officer for a student organization at SJSU. CADRE SO is a student organization for art majors, mostly for Digital Media Art students, at San Jose State University. CADRE SO stands for Computer in Arts, Design, Research, and Education, Student Organization</p>
+            <p>Skills:</p>
+            <ul>
+              <li>Help organize, setup, and host club meetings and events</li>
+              <li>Assiting with new digial media art students or people who want to join DMA</li>
+              <li>Recording events</li>
+              <li>Taking all capture content and creating recap videos</li>
+            </ul>
+          </div>
         </section>
-        <section>
-          <h3>General Merchandise Expert</h3>
-          <p>Target</p>
-          <p>June 2023 - Present</p>
-          <p>I go around the store making sure shelves are always fully stocked and cleaned up.</p>
-          <p>Skills:</p>
-          <ul>
-            <li>Restocking and cleaning shelves in different departments</li>
-            <li>Assiting customers and answering questions</li>
-            <li>Cashier trained</li>
-            <li>Trained for online customer orders</li>
-          </ul>
+
+        <section class="work-item">
+          <div class="work-details">
+            <h3>General Merchandise Expert</h3>
+            <p>Target</p>
+            <p>June 2023 - Present</p>
+           </div>
+
+          <div class="work-summary">
+            <p>I go around the store making sure shelves are always fully stocked and cleaned up.</p>
+            <p>Skills:</p>
+            <ul>
+              <li>Restocking and cleaning shelves in different departments</li>
+              <li>Assiting customers and answering questions</li>
+              <li>Cashier trained</li>
+              <li>Trained for online customer orders</li>
+            </ul>
+          </div>
         </section>
 
         <!-- End content edits here. -->
@@ -92,7 +108,7 @@
         <h2>Education</h2>
 
         <!-- To add more items, copy this whole <section></section> block -->
-        <section>
+        <section class="education-item">
           <h3>San Jose State University - San Jose, CA</h3>
           <p>Digital Media Art, 2021-2025</p>
           <ul>
