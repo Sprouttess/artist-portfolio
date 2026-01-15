@@ -241,6 +241,7 @@ footer a:hover {
 .project-item img {
     width: 300px;
 }
+/*
 @media screen and (min-width:860px) {
     .project-item {
         display: flow-root;
@@ -249,7 +250,7 @@ footer a:hover {
     float: left;
     margin-right: 20px;
     }
-}
+} */
 @media screen and (min-width:650px) and (max-width:859px) {
     .project-wrapper {
         display: grid;
